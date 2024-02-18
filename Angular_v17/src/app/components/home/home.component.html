@@ -1,19 +1,7 @@
-<div class="container">
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
- <div class="item">Satish</div>
-</div>
+<ng-template #renu let-data>
+  Welcome Renu
+  {{data.place}} -- {{data.pin}} -- {{data.age}}
+</ng-template>
+<ng-template #satish let-data>Welcome Satish -  {{data}}</ng-template>
+
+<ng-container *ngTemplateOutlet="satish ; context: {$implicit: sum()}"></ng-container>
