@@ -5,3 +5,13 @@
 <ng-template #satish let-data>Welcome Satish -  {{data}}</ng-template>
 
 <ng-container *ngTemplateOutlet="satish ; context: {$implicit: sum()}"></ng-container>
+<br>
+<input [(ngModel)]="value" ><br>
+<input #inputVal> <button (click)="onClick(inputVal.value)">Click</button>
+<app-hooks [value]="value">
+  <h4>{{value}}</h4>
+</app-hooks>
+<div appHighlight>
+  <h4>Home Component</h4>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum unde odio excepturi sequi, nisi minus repellendus aperiam cupiditate veritatis dolorem voluptate obcaecati quam nesciunt neque aliquam dicta molestias aspernatur.</p>
+</div>
